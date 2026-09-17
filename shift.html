@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sai Teja Challapalli — Growth Marketing Case Studies</title>
+<meta name="description" content="Performance marketing and growth case studies: 8Views, KoinX, BondbloX, Hustle Club, Future Self. Numbers-first, mechanism-first.">
+<meta property="og:title" content="Sai Teja Challapalli — Growth Marketing Case Studies">
+<meta property="og:description" content="6 years, 30+ brands, $10M+ managed. Performance marketer and indie maker.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F5EDD8;
+  --ink: #0D0D0D;
+  --orange: #E8622A;
+  --teal: #2DB89A;
+  --muted: #888;
+  --mid: #666;
+  --light-mid: #444;
+  --card-bg: #fff;
+  --callout-bg: #FFF3E8;
+  --border: rgba(13,13,13,0.12);
+  --border-strong: #0D0D0D;
+  --shadow: 3px 3px 0 #0D0D0D;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111010;
+    --ink: #F0E8D8;
+    --orange: #F07040;
+    --teal: #2DB89A;
+    --muted: #666;
+    --mid: #888;
+    --light-mid: #aaa;
+    --card-bg: #1c1b1a;
+    --callout-bg: #211810;
+    --border: rgba(240,232,216,0.1);
+    --border-strong: rgba(240,232,216,0.35);
+    --shadow: 3px 3px 0 rgba(240,232,216,0.25);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111010;
+  --ink: #F0E8D8;
+  --orange: #F07040;
+  --teal: #2DB89A;
+  --muted: #666;
+  --mid: #888;
+  --light-mid: #aaa;
+  --card-bg: #1c1b1a;
+  --callout-bg: #211810;
+  --border: rgba(240,232,216,0.1);
+  --border-strong: rgba(240,232,216,0.35);
+  --shadow: 3px 3px 0 rgba(240,232,216,0.25);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.blob1 {
+  position: fixed; top: -180px; right: -160px;
+  width: 560px; height: 440px; border-radius: 50%;
+  background: #E8622A; opacity: 0.06; pointer-events: none; z-index: 0;
+}
+.blob2 {
+  position: fixed; bottom: -140px; left: -120px;
+  width: 420px; height: 340px; border-radius: 50%;
+  background: #2DB89A; opacity: 0.06; pointer-events: none; z-index: 0;
+}
+
+.page {
+  position: relative; z-index: 1;
+  max-width: 1080px; margin: 0 auto; padding: 0 24px;
+}
+
+/* ── Top bar ── */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 0; border-bottom: 1px solid var(--border);
+}
+.topbar-back {
+  font-size: 13px; font-weight: 500; color: var(--muted);
+  display: flex; align-items: center; gap: 6px;
+  transition: color .15s;
+}
+.topbar-back:hover { color: var(--orange); }
+.topbar-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+}
+
+/* ── Mobile TOC ── */
+.mobile-toc {
+  display: none;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  padding: 14px 0; border-bottom: 1px solid var(--border);
+  gap: 8px;
+}
+.mobile-toc-link {
+  display: inline-block; flex-shrink: 0;
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  border: 1.5px solid var(--border-strong); border-radius: 20px;
+  padding: 5px 14px; margin-right: 6px;
+  transition: color .15s, border-color .15s;
+  opacity: 0.6;
+}
+.mobile-toc-link:hover { color: var(--orange); border-color: var(--orange); opacity: 1; }
+
+/* ── Layout ── */
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 0;
+  align-items: start;
+}
+
+/* ── Sticky TOC ── */
+.toc {
+  position: sticky; top: 24px;
+  padding: 40px 32px 40px 0;
+  border-right: 1px solid var(--border);
+}
+.toc-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 14px;
+}
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.toc-item a {
+  display: block; font-size: 13px; font-weight: 500; color: var(--muted);
+  padding: 6px 0 6px 12px;
+  border-left: 2px solid transparent;
+  transition: color .15s, border-color .15s;
+  line-height: 1.3;
+}
+.toc-item a:hover,
+.toc-item a.active { color: var(--orange); border-left-color: var(--orange); }
+.toc-sub { padding-left: 24px !important; font-size: 12px !important; }
+
+/* ── Main ── */
+.main { padding: 48px 0 96px 40px; }
+
+/* ── Hero ── */
+.hero { margin-bottom: 72px; }
+.hero-name {
+  font-size: 44px; font-weight: 800; letter-spacing: -0.03em;
+  line-height: 1.05; margin-bottom: 8px;
+}
+.hero-role {
+  font-size: 14px; font-weight: 500; color: var(--muted);
+  margin-bottom: 24px; letter-spacing: 0.02em;
+}
+.hero-bio {
+  font-size: 16px; line-height: 1.75; color: var(--light-mid);
+  max-width: 600px; margin-bottom: 24px;
+}
+.hero-callout {
+  border-left: 3px solid var(--orange);
+  padding: 16px 20px;
+  background: var(--callout-bg);
+  border-radius: 0 10px 10px 0;
+  font-size: 15px; line-height: 1.75; color: var(--light-mid);
+  max-width: 600px; margin-bottom: 28px;
+  font-style: italic;
+}
+.socials { display: flex; gap: 8px; flex-wrap: wrap; }
+.social-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 600; color: var(--muted);
+  border: 1.5px solid var(--border-strong); border-radius: 8px;
+  padding: 6px 14px; opacity: 0.7;
+  transition: color .15s, border-color .15s, opacity .15s;
+}
+.social-link:hover { color: var(--orange); border-color: var(--orange); opacity: 1; }
+
+/* ── Section ── */
+.section {
+  margin-bottom: 80px;
+  scroll-margin-top: 32px;
+}
+.section-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.section-num {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--orange); margin-bottom: 8px;
+}
+.section-company {
+  font-size: 34px; font-weight: 800;
+  letter-spacing: -0.03em; line-height: 1.1;
+}
+.section-role {
+  font-size: 14px; font-weight: 500; color: var(--muted); margin-top: 6px;
+}
+.section-period { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+/* ── Stat block ── */
+.stats-row {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  margin: 24px 0;
+}
+.stat {
+  background: var(--card-bg);
+  border: 2px solid var(--border-strong);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 14px 18px;
+  min-width: 100px;
+}
+.stat-value {
+  font-size: 26px; font-weight: 800;
+  letter-spacing: -0.03em; color: var(--orange); line-height: 1.1;
+}
+.stat-label {
+  font-size: 11px; font-weight: 500; color: var(--muted);
+  margin-top: 4px; line-height: 1.4;
+}
+
+/* ── Prose ── */
+.prose {
+  font-size: 15px; line-height: 1.8; color: var(--light-mid);
+  max-width: 600px;
+}
+.prose strong { color: var(--ink); font-weight: 600; }
+
+/* ── Sub-project card ── */
+.sub-project {
+  margin: 28px 0;
+  padding: 24px;
+  background: var(--card-bg);
+  border: 2px solid var(--border-strong);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.sub-name {
+  font-size: 18px; font-weight: 700;
+  letter-spacing: -0.02em; margin-bottom: 3px;
+}
+.sub-type {
+  font-size: 12px; font-weight: 500; color: var(--muted); margin-bottom: 16px;
+}
+
+/* ── Detail list ── */
+.detail-list { list-style: none; padding: 0; margin: 12px 0; }
+.detail-list li {
+  display: flex; gap: 10px;
+  font-size: 14px; line-height: 1.7; color: var(--light-mid);
+  padding: 3px 0;
+}
+.detail-list li::before {
+  content: '–'; color: var(--orange); font-weight: 700;
+  flex-shrink: 0; margin-top: 1px;
+}
+
+/* ── Screenshot placeholder ── */
+.screenshot-slot {
+  margin: 16px 0;
+  border-radius: 10px;
+  border: 1.5px dashed var(--muted);
+  background: var(--card-bg);
+  aspect-ratio: 16 / 9;
+  max-width: 560px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 8px; padding: 20px; text-align: center;
+  opacity: 0.7;
+}
+.screenshot-icon { font-size: 22px; opacity: 0.5; }
+.screenshot-label {
+  font-size: 13px; font-weight: 600; color: var(--muted); line-height: 1.4;
+}
+.screenshot-hint { font-size: 11px; color: var(--muted); opacity: 0.7; }
+.evidence-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+  margin: 24px 0 12px;
+}
+
+/* ── Tag/badge ── */
+.tag {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 20px;
+}
+.tag-red { background: #FEE2E2; color: #DC2626; border: 1px solid #DC2626; }
+.tag-green { background: #DCFCE7; color: #16A34A; border: 1px solid #16A34A; }
+.tag-amber { background: #FEF9C3; color: #A16207; border: 1px solid #A16207; }
+
+/* ── Honest note ── */
+.honest-row {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin: 16px 0; flex-wrap: wrap;
+}
+.honest-note {
+  font-size: 14px; line-height: 1.6; color: var(--light-mid);
+  max-width: 520px;
+}
+
+/* ── Growth channel list ── */
+.channel-label {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  margin: 16px 0 8px; letter-spacing: -0.01em;
+}
+
+/* ── Footer ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0 48px;
+}
+.footer-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-note { font-size: 12px; color: var(--muted); }
+.footer-back { font-size: 13px; font-weight: 600; color: var(--orange); }
+.footer-back:hover { opacity: 0.8; }
+
+/* ── Responsive ── */
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+  .toc { display: none; }
+  .mobile-toc { display: flex; }
+  .main { padding: 24px 0 64px; }
+  .hero-name { font-size: 30px; }
+  .section-company { font-size: 26px; }
+  .stat-value { font-size: 22px; }
+  .prose { max-width: 100%; }
+  .screenshot-slot { max-width: 100%; }
+  .hero-bio { max-width: 100%; }
+  .hero-callout { max-width: 100%; }
+}
+
+@media print {
+  .blob1, .blob2, .toc, .mobile-toc, .topbar { display: none; }
+  .layout { grid-template-columns: 1fr; }
+  .main { padding: 0; }
+  body { background: #fff; color: #000; }
+}
+</style>
+</head>
+<body>
+<div class="blob1"></div>
+<div class="blob2"></div>
+
+<div class="page">
+
+  <nav class="topbar">
+    <a href="/" class="topbar-back">← Portfolio</a>
+    <span class="topbar-label">Case Studies</span>
+  </nav>
+
+  <!-- Mobile anchor nav -->
+  <div class="mobile-toc" role="navigation" aria-label="Page sections">
+    <a href="#intro" class="mobile-toc-link">Intro</a>
+    <a href="#8views" class="mobile-toc-link">8Views</a>
+    <a href="#koinx" class="mobile-toc-link">KoinX</a>
+    <a href="#bondblo" class="mobile-toc-link">BondbloX</a>
+    <a href="#owntools" class="mobile-toc-link">Own Tools</a>
+  </div>
+
+  <div class="layout">
+
+    <!-- Sticky sidebar TOC -->
+    <aside class="toc" aria-label="Table of contents">
+      <div class="toc-label">On this page</div>
+      <ul class="toc-list">
+        <li class="toc-item"><a href="#intro">Intro</a></li>
+        <li class="toc-item"><a href="#8views">8Views</a></li>
+        <li class="toc-item"><a href="#koinx">KoinX</a></li>
+        <li class="toc-item"><a href="#bondblo">BondbloX</a></li>
+        <li class="toc-item"><a href="#owntools">Own Tools</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+
+      <!-- ────── INTRO ────── -->
+      <section id="intro" class="section hero" aria-labelledby="name-heading">
+        <h1 id="name-heading" class="hero-name">Sai Teja Challapalli</h1>
+        <p class="hero-role">Growth Marketer &amp; Indie Maker</p>
+        <p class="hero-bio">6 years scaling 30+ brands across performance marketing, and $10M+ in managed marketing budgets across Meta, Google, LinkedIn, Reddit, and Amazon. Alongside that, built 3+ startups of my own — not just running other people's growth, but shipping, marketing, and shutting down my own products when they didn't work.</p>
+        <blockquote class="hero-callout">Acquisition was never where the work stopped. At every engagement below — 8Views, KoinX, BondbloX — the real value was in what happened after the click: fixing activation, retention, and whatever was actually broken in the funnel, not just buying traffic.</blockquote>
+        <div class="socials">
+          <!-- Update these links before sharing -->
+          <a href="https://linkedin.com/in/[your-linkedin-handle]" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/[your-x-handle]" class="social-link" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="mailto:hustle21club@gmail.com" class="social-link">hustle21club@gmail.com</a>
+        </div>
+      </section>
+
+      <!-- ────── 8VIEWS ────── -->
+      <section id="8views" class="section" aria-labelledby="8views-heading">
+        <div class="section-header">
+          <div class="section-num">01 — Agency</div>
+          <h2 id="8views-heading" class="section-company">8Views</h2>
+          <p class="section-role">Performance Marketer</p>
+          <p class="section-period">2021 – 2023 · 30+ brands · Real estate, e-commerce, D2C, healthcare, education</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-value">30+</div>
+            <div class="stat-label">brands managed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">0.2→2</div>
+            <div class="stat-label">ROAS in 45 days<br>(Dryp by Evolut)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">+568%</div>
+            <div class="stat-label">sales increase<br>(Nourish You)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">5</div>
+            <div class="stat-label">plot sales at<br>~₹3Cr each</div>
+          </div>
+        </div>
+
+        <div class="sub-project">
+          <h3 class="sub-name">Dryp by Evolut</h3>
+          <p class="sub-type">Athleisure e-commerce · Meta Ads + Shopify CRO</p>
+          <p class="prose">Took the brand from 0.2 to 2 ROAS in 45 days. Started by mining competitor reviews and Amazon/Flipkart listings to find real customer language and actual pain points, then rebuilt ad copy and creative around what customers already said in their own words.</p>
+          <p class="prose" style="margin-top: 12px;">When traffic still wasn't converting after the creative overhaul, the problem shifted to the storefront. Used Hotjar and heatmaps to trace where users dropped off on the Shopify store, then fixed SKU presentation, social proof placement, and trust signals. Once conversion rate improved, layered email and WhatsApp retention sequences on top.</p>
+          <div class="stats-row" style="margin-top: 20px; margin-bottom: 0;">
+            <div class="stat">
+              <div class="stat-value">0.2→2</div>
+              <div class="stat-label">ROAS in 45 days</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-project">
+          <h3 class="sub-name">Nourish You</h3>
+          <p class="sub-type">Organic superfood brand · Meta Ads + retention</p>
+          <div class="stats-row" style="margin-top: 0; margin-bottom: 0;">
+            <div class="stat">
+              <div class="stat-value">1→4</div>
+              <div class="stat-label">ROAS</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">+568%</div>
+              <div class="stat-label">Sales</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">+48%</div>
+              <div class="stat-label">Returning<br>customer rate</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-project">
+          <h3 class="sub-name">Vamshiram Homes</h3>
+          <p class="sub-type">Real estate developer · Meta + Google · ₹10–15L/month managed spend</p>
+          <p class="prose">Managed ₹10–15L/month across Meta and Google, owned creative and landing page conversion end-to-end for a high-ticket developer.</p>
+          <ul class="detail-list" style="margin-top: 16px;">
+            <li>Meta: open video-view campaigns across micro-located audiences, retargeting 25%+ video viewers with dedicated lead-gen sequences to filter for real intent</li>
+            <li>Google: Search, Performance Max, and Display running in parallel for intent capture + discovery coverage</li>
+          </ul>
+          <div class="stats-row" style="margin-top: 20px; margin-bottom: 0;">
+            <div class="stat">
+              <div class="stat-value">5</div>
+              <div class="stat-label">plot sales<br>~₹3Cr each</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ────── KOINX ────── -->
+      <section id="koinx" class="section" aria-labelledby="koinx-heading">
+        <div class="section-header">
+          <div class="section-num">02 — Startup (Founding team)</div>
+          <h2 id="koinx-heading" class="section-company">KoinX</h2>
+          <p class="section-role">Founding Growth Team</p>
+          <p class="section-period">2022–23 (India) · 2025–26 (Global) · Crypto tax platform</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-value">100K+</div>
+            <div class="stat-label">verified signups<br>in 90 days</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">~$1K/day</div>
+            <div class="stat-label">managed budget</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">0.2→1.1</div>
+            <div class="stat-label">ROAS in 3 months<br>(global expansion)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">~$20K</div>
+            <div class="stat-label">Reddit spend<br>tested &amp; called</div>
+          </div>
+        </div>
+
+        <p class="prose"><strong>Fixed a broken attribution system.</strong> iOS 14+ killed cookie-based tracking — campaigns were showing double-counted or missing attribution, so spend decisions were being made on bad data. Moved to GTM server-side tracking and added a persistent signup user ID cross-checked against GA to eliminate double-counting.</p>
+
+        <p class="prose" style="margin-top: 16px;"><strong>Got the ad accounts live when no one else could.</strong> As a founding team member, paved the way for Meta and Google ad accounts on a crypto tax platform — the kind most agencies won't touch. Worked directly with legal teams and platform specialists, handled contracts and compliance documentation. Google is now one of KoinX's most profitable channels as a direct result.</p>
+
+        <p class="prose" style="margin-top: 16px;"><strong>Fixed the drop-off, stage by stage.</strong> The real funnel was signup → OTP verification → wallet addition → filing and payment. Mapped where users actually dropped off between each stage and built ConvertKit email + Wati WhatsApp sequences targeting each specific gap — not a generic "complete your signup" nudge.</p>
+
+        <p class="prose" style="margin-top: 16px;"><strong>Global expansion (2025–26):</strong> Inherited an account with ROAS under 0.2. Took it to 1.1 in 3 months running Google as the primary channel into Canada, US, and Australia.</p>
+
+        <div class="honest-row" style="margin-top: 20px;">
+          <span class="tag tag-amber">Honest call</span>
+          <p class="honest-note">Spent ~$20K on Reddit as part of the global channel mix. Landed at roughly break-even, not profitable. Recognized it wasn't the highest-leverage channel and stopped pushing spend into it rather than continuing to optimize a losing bet.</p>
+        </div>
+
+        <div class="evidence-label">Evidence</div>
+        <div class="screenshot-slot">
+          <div class="screenshot-icon">📊</div>
+          <div class="screenshot-label">[KoinX — Meta Ads Manager: cost-per-result table]</div>
+          <div class="screenshot-hint">Replace with actual screenshot · landscape · ~16:9</div>
+        </div>
+        <div class="screenshot-slot">
+          <div class="screenshot-icon">📈</div>
+          <div class="screenshot-label">[KoinX — GA conversion data, 90-day view]</div>
+          <div class="screenshot-hint">Replace with actual screenshot · landscape · ~16:9</div>
+        </div>
+        <div class="screenshot-slot">
+          <div class="screenshot-icon">🎯</div>
+          <div class="screenshot-label">[KoinX Global — Google Ads ROAS progression, 3-month view]</div>
+          <div class="screenshot-hint">Replace with actual screenshot · landscape · ~16:9</div>
+        </div>
+
+      </section>
+
+      <!-- ────── BONDBLO ────── -->
+      <section id="bondblo" class="section" aria-labelledby="bondblo-heading">
+        <div class="section-header">
+          <div class="section-num">03 — Fintech</div>
+          <h2 id="bondblo-heading" class="section-company">BondbloX</h2>
+          <p class="section-role">Growth Marketing Manager — full-funnel</p>
+          <p class="section-period">~1 year · Regulated fintech · Ultra-HNI bond investors · Built from zero, no team</p>
+        </div>
+
+        <p class="prose">Owned growth end-to-end for a regulated fintech platform serving ultra-HNI bond investors — no team, no existing playbook, built from zero.</p>
+
+        <div class="sub-project">
+          <h3 class="sub-name">Lifecycle &amp; Retention</h3>
+          <p class="prose">Built CleverTap segmentation across three user states — bought bonds, signed up but never bought, bought once and stopped — and ran differentiated email, push, and WhatsApp sequences per segment. A single "you haven't done X" nudge doesn't work on an ultra-HNI investor; the message had to match where they actually were in the decision process.</p>
+        </div>
+
+        <div class="sub-project">
+          <h3 class="sub-name">Acquisition — Google Ads</h3>
+          <p class="prose">Ran Google Ads across global markets, optimized for signup quality over volume. A regulated investment platform can't absorb high-volume, low-intent traffic — every unqualified lead adds compliance overhead — so the optimization target was qualified signups, not raw count.</p>
+        </div>
+
+        <div class="sub-project">
+          <h3 class="sub-name">SEO — owned solo</h3>
+          <ul class="detail-list">
+            <li>On-page: schema markup, FAQ structure for featured snippets</li>
+            <li>Off-page: backlinks from relevant DR domains in the finance space</li>
+            <li>Technical: page speed improvements, load time reduction</li>
+          </ul>
+        </div>
+
+        <div class="sub-project">
+          <h3 class="sub-name">Email Marketing</h3>
+          <p class="prose">Automation and personalized sequences building webinar funnels to move prospects toward conversion before sales ever entered the conversation. The goal was to arrive at the sales call already informed and partially convinced — shortening the cycle on a high-consideration product.</p>
+        </div>
+
+      </section>
+
+      <!-- ────── OWN TOOLS ────── -->
+      <section id="owntools" class="section" aria-labelledby="owntools-heading">
+        <div class="section-header">
+          <div class="section-num">04 — Founder</div>
+          <h2 id="owntools-heading" class="section-company">Own Tools</h2>
+          <p class="section-role">Self-directed · Built, shipped, and in two cases shut down</p>
+          <p class="section-period">2022 – present</p>
+        </div>
+
+        <p class="prose">Before Hustle Club and Future Self, two earlier products didn't make it: <strong>Performance Rhino</strong> (2022, an ad-copy generator for e-commerce, built pre-ChatGPT) and <strong>Shri Sri GPT</strong> (2023, an AI chatbot trained on Art of Living's knowledge base, which drew investment interest that ultimately didn't convert). Both got shut down. Those lessons are what built what's below.</p>
+
+        <div class="sub-project" style="margin-top: 28px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 3px; flex-wrap: wrap;">
+            <h3 class="sub-name" style="margin-bottom: 0;">Hustle Club</h3>
+            <span class="tag tag-amber">Currently paused</span>
+          </div>
+          <p class="sub-type">Sleep &amp; early-rising community · 21- and 30-day structured challenges · Paid</p>
+          <p class="prose">Started as a personal fix — waking at 5am to build consistency — grew into a paid community helping people fix sleep and become early risers through structured challenges, with a personalized, therapy-informed approach.</p>
+          <div class="channel-label">Growth channels, in order of what actually worked:</div>
+          <ul class="detail-list">
+            <li>Word of mouth — the first real signal the product worked</li>
+            <li>Cold outreach into adjacent communities (5am clubs, running clubs, book clubs), leading with value not a pitch</li>
+            <li>Reddit — the breakout channel. Built to 3,000+ karma writing real sleep-hygiene content, generated 200+ signups for a free resource, converted ~10 paid sales once monetized</li>
+            <li>Paid Meta campaigns running alongside, contributing additional sales</li>
+          </ul>
+          <div class="stats-row" style="margin-top: 20px; margin-bottom: 0;">
+            <div class="stat">
+              <div class="stat-value">100+</div>
+              <div class="stat-label">paid members</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">$300–400</div>
+              <div class="stat-label">MRR at peak</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">~$3K</div>
+              <div class="stat-label">total revenue</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">3K+</div>
+              <div class="stat-label">Reddit karma<br>(sleep content)</div>
+            </div>
+          </div>
+          <p class="prose" style="margin-top: 16px; font-size: 13px; color: var(--muted);">Operational bandwidth was the constraint, not product-market fit.</p>
+        </div>
+
+        <div class="sub-project">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 3px; flex-wrap: wrap;">
+            <h3 class="sub-name" style="margin-bottom: 0;">Future Self</h3>
+            <span class="tag tag-green">Live</span>
+          </div>
+          <p class="sub-type">Website blocker · Browser extension · Focus &amp; sleep hygiene</p>
+          <p class="prose">The insight from running Hustle Club: the problem was never waking up early — it was staying up late. Built Future Self as a website blocker that warns users during work hours and, specifically, during wind-down and sleep hours when distraction costs the most.</p>
+          <div class="channel-label">Growth (no-code, self-taught):</div>
+          <ul class="detail-list">
+            <li>Aggressive ASEO — directory launches, ranked top 20 of the week on Peerlist</li>
+            <li>Embedded in self-improvement and productivity subreddits with organic comments and posts</li>
+            <li>Organic discovery via ChatGPT and Perplexity surfacing the extension</li>
+            <li>Ongoing build-in-public</li>
+          </ul>
+          <div class="stats-row" style="margin-top: 20px; margin-bottom: 0;">
+            <div class="stat">
+              <div class="stat-value">50+</div>
+              <div class="stat-label">users</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">5</div>
+              <div class="stat-label">lifetime sales</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">~$100</div>
+              <div class="stat-label">revenue</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main><!-- /main -->
+  </div><!-- /layout -->
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-note">Sai Teja Challapalli · hustle21club@gmail.com</span>
+      <a href="/" class="footer-back">← Back to portfolio</a>
+    </div>
+  </footer>
+
+</div><!-- /page -->
+
+<script>
+// Highlight active TOC link on scroll
+const sections = document.querySelectorAll('section[id]');
+const tocLinks = document.querySelectorAll('.toc-item a');
+if (tocLinks.length && 'IntersectionObserver' in window) {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.toc-item a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
+  sections.forEach(s => obs.observe(s));
+}
+
+// Fade-in on scroll
+if ('IntersectionObserver' in window) {
+  const style = document.createElement('style');
+  style.textContent = `.fade-in{opacity:0;transform:translateY(12px);transition:opacity .4s ease,transform .4s ease}.fade-in.visible{opacity:1;transform:none}`;
+  document.head.appendChild(style);
+  const fadeObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.sub-project, .stats-row, .hero-callout').forEach(el => {
+    el.classList.add('fade-in');
+    fadeObs.observe(el);
+  });
+}
+</script>
+</body>
+</html>
