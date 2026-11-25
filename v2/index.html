@@ -23,6 +23,15 @@ a:hover{color:#15151A;text-decoration-thickness:3px}
 .hiw-replay{cursor:pointer}
 .hiw-replay:hover{text-decoration-thickness:3px}
 @media (prefers-reduced-motion: reduce){.hiw-dot,.hiw-dot.hiw-b{animation:none;display:none}.hiw-title,.hiw-title.hiw-b{animation:none;color:#15151A}.hiw-replay{display:none}}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,40px)}
+.proof-viewport{margin-top:16px;height:480px;overflow:hidden;position:relative}
+.proof-track{display:flex;flex-direction:column;gap:12px;animation:proof-scroll 36s linear infinite}
+.proof-track:hover{animation-play-state:paused}
+@keyframes proof-scroll{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+.proof-img{width:100%;display:block;border:1px solid #0E8C7A;filter:grayscale(100%);transition:filter .25s ease}
+.proof-img:hover{filter:none}
+@media (max-width: 640px){.proof-grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion: reduce){.proof-track{animation:none}.proof-dup{display:none}.proof-viewport{height:auto;overflow:visible}}
 </style>
 </head>
 <body>
@@ -115,13 +124,13 @@ a:hover{color:#15151A;text-decoration-thickness:3px}
 <span class="mono" style="font-size: 12px; color: #55555C">status</span>
 </div>
 <div class="mono" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 52px; border-bottom: 1px solid #DEDEDA; font-size: 13px; color: #55555C">
-<span>01  coming soon</span><span>soon</span>
+<span>01  seo is solved, aeo isn't — citations and ranking factors are unpredictable and keep changing. building automations to rank consistently in ai overviews</span><span>building</span>
 </div>
 <div class="mono" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 52px; border-bottom: 1px solid #DEDEDA; font-size: 13px; color: #55555C">
-<span>02  coming soon</span><span>soon</span>
+<span>02  ai writing is mostly slop, manual writing is too slow — built a system to ship real articles fast without losing my take (2hrs → 30min)</span><span>shipped</span>
 </div>
 <div class="mono" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 52px; border-bottom: 1px solid #DEDEDA; font-size: 13px; color: #55555C">
-<span>03  coming soon</span><span>soon</span>
+<span>03  the engineering layer under both — ui, apis, databases, mvps, verifiers, evals, mcps, built from first principles as part of 100x Engineering cohort</span><span>ongoing</span>
 </div>
 </div>
 </section>
@@ -157,11 +166,40 @@ a:hover{color:#15151A;text-decoration-thickness:3px}
 <h2 style="margin: 0; font-size: clamp(28px, 4.6vw, 40px); line-height: 1.1; font-weight: 600; letter-spacing: -0.02em">Proof-of-Work Feed</h2>
 <span class="mono" style="font-size: 12px; color: #55555C">Last updated [DATE]</span>
 </div>
-<ul class="mono" style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-bottom: 1px solid #DEDEDA; font-size: 13px; color: #55555C">
-<li style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 16px; min-height: 52px; padding: 8px 0; border-top: 1px solid #DEDEDA"><span>[DATE]  Signalux blog</span><span>coming soon</span></li>
-<li style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 16px; min-height: 52px; padding: 8px 0; border-top: 1px solid #DEDEDA"><span>[DATE]  LinkedIn</span><span>coming soon</span></li>
-<li style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 16px; min-height: 52px; padding: 8px 0; border-top: 1px solid #DEDEDA"><span>[DATE]  X</span><span>coming soon</span></li>
-</ul>
+<div class="proof-grid">
+<div class="proof-col">
+<h3 style="margin: 0; font-size: 15px; font-weight: 600">Writing on LinkedIn</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.5; color: #55555C">[LINKEDIN ONE-LINER]</p>
+<div class="proof-viewport">
+<div class="proof-track">
+<img class="proof-img" src="/v2/assets/proof-linkedin/placeholder-01.svg" alt="LinkedIn post screenshot 1" loading="lazy">
+<img class="proof-img" src="/v2/assets/proof-linkedin/placeholder-02.svg" alt="LinkedIn post screenshot 2" loading="lazy">
+<img class="proof-img" src="/v2/assets/proof-linkedin/placeholder-03.svg" alt="LinkedIn post screenshot 3" loading="lazy">
+<img class="proof-img" src="/v2/assets/proof-linkedin/placeholder-04.svg" alt="LinkedIn post screenshot 4" loading="lazy">
+<img class="proof-img proof-dup" src="/v2/assets/proof-linkedin/placeholder-01.svg" alt="" aria-hidden="true" loading="lazy">
+<img class="proof-img proof-dup" src="/v2/assets/proof-linkedin/placeholder-02.svg" alt="" aria-hidden="true" loading="lazy">
+<img class="proof-img proof-dup" src="/v2/assets/proof-linkedin/placeholder-03.svg" alt="" aria-hidden="true" loading="lazy">
+<img class="proof-img proof-dup" src="/v2/assets/proof-linkedin/placeholder-04.svg" alt="" aria-hidden="true" loading="lazy">
+</div>
+</div>
+</div>
+<div class="proof-col">
+<h3 style="margin: 0; font-size: 15px; font-weight: 600">Writing on the blog</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.5; color: #55555C">[BLOG ONE-LINER]</p>
+<div class="proof-viewport">
+<div class="proof-track">
+<img class="proof-img" src="/v2/assets/proof-blog/placeholder-01.svg" alt="Blog post screenshot 1" loading="lazy">
+<img class="proof-img" src="/v2/assets/proof-blog/placeholder-02.svg" alt="Blog post screenshot 2" loading="lazy">
+<img class="proof-img" src="/v2/assets/proof-blog/placeholder-03.svg" alt="Blog post screenshot 3" loading="lazy">
+<img class="proof-img" src="/v2/assets/proof-blog/placeholder-04.svg" alt="Blog post screenshot 4" loading="lazy">
+<img class="proof-img proof-dup" src="/v2/assets/proof-blog/placeholder-01.svg" alt="" aria-hidden="true" loading="lazy">
+<img class="proof-img proof-dup" src="/v2/assets/proof-blog/placeholder-02.svg" alt="" aria-hidden="true" loading="lazy">
+<img class="proof-img proof-dup" src="/v2/assets/proof-blog/placeholder-03.svg" alt="" aria-hidden="true" loading="lazy">
+<img class="proof-img proof-dup" src="/v2/assets/proof-blog/placeholder-04.svg" alt="" aria-hidden="true" loading="lazy">
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- ABOUT -->
